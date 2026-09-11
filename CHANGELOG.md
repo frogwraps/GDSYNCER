@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.12.0-beta.3 — unpublished
+
+Workspace-manager correction.
+
+- Makes `AAA` the root workspace manager for all projects.
+- Defines the expected flow: open `AAA`, run `:start`, then say `start a project`.
+- Clarifies that `AAA` owns the global toolbox, version manifest, project templates and project organization.
+- Keeps project folders as `GDS <Project Name>` inside `AAA`.
+- Pauses public publication while this user experience is sorted out.
+
 ## v2.12.0-beta.2 — 2026-09-11
 
 Small public setup-doc patch.

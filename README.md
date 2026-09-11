@@ -4,18 +4,21 @@
 
 I built GD SYNCER because I have ADD, 50 tabs open at once, and more than one project pulling at my attention. I'd step away from a project for a couple of days—or a couple of weeks—and come back lost, not quite remembering where I'd left off. This protocol gave me a way to keep working on projects over longer periods without having to reconstruct everything each time. I could return to the decisions, progress, and next step, while keeping the project in front of me separate from all the others.
 
-GD SYNCER is designed to let you change AI assistants, conversations, and computers without starting your project over. Start with Claude, continue in Codex, or return through an agent environment such as Hermes: your saved instructions, decisions, and next step live in project files, not just inside one chat. Google Drive is the working home for those files, keeping them accessible across your connected devices without a Git commit-and-push routine for everyday work. Tell your assistant `:start` to pick up the project and `:end` to save your place; each assistant needs file access and must follow the protocol. The recommended stack is mounted Google Drive for live project files, Karpathy-style Obsidian notes for human-readable context, and optional MemPalace recall for semantic memory. Project and branch folders keep unrelated work separate while still letting your storage, notes, memory, and tools point at the same project. GitHub is where the free, open-source protocol is shared, not where you have to put your private projects.
+GD SYNCER is designed to let you change AI assistants, conversations, and computers without starting your project over. Start with Claude, continue in Codex, or return through an agent environment such as Hermes: your saved instructions, decisions, and next step live in project files, not just inside one chat. Google Drive is the working home for those files, keeping them accessible across your connected devices without a Git commit-and-push routine for everyday work. Tell your assistant `:start` to pick up the workspace or project and `:end` to save your place; each assistant needs file access and must follow the protocol. The recommended stack is mounted Google Drive for live project files, Karpathy-style Obsidian notes for human-readable context, and optional MemPalace recall for semantic memory. The `AAA` folder is the workspace manager: it holds the global toolbox, version manifest, project templates, and every `GDS <Project Name>` project folder. GitHub is where the free, open-source protocol package is staged and reviewed, not where you have to put your private projects.
+
+The design follows KISS: Keep It Simple, Stupid. The core is a small set of Markdown files that tell any file-capable assistant what exists, what is open, what changed, and what to do next.
 
 — Ben, creator of GD SYNCER
 
-**Public beta package · protocol v2.12 · MIT licensed.** The protocol is free; your AI assistant, storage, or optional services may have their own costs.
+**Unpublished beta staging package · protocol v2.12 · MIT licensed.** The protocol is free; your AI assistant, storage, or optional services may have their own costs.
 
 ## Try it
 
-1. Download the ZIP from [Releases](https://github.com/frogwraps/GDSYNCER/releases) when available, or use GitHub's **Code → Download ZIP**.
+1. Download the ZIP from Releases when you have access, or use GitHub's **Code → Download ZIP**.
 2. Set up Google Drive for desktop on Windows or macOS and confirm your Drive folder is accessible through your computer's file system. Extract the release outside your work folders, then copy the **contents** of `workspace/` into a new, empty `AAA` folder on that Drive. See the setup guide below for sync checks and other environments.
-3. Open that folder in an AI assistant that can read and write its files. Ask it to read `START_HERE.md` and install a project called `My First Project`. The protocol creates the folder as `GDS My First Project`.
-4. Open the new project in your assistant and say `:start`. Do a small task, then say `:end`.
+3. Open `AAA` in an AI assistant that can read and write its files. Tell it: `Read START_HERE.md and execute :start.`
+4. Say: `start a project`. The AAA workspace manager asks for the missing details, then creates the project as `GDS <Project Name>`.
+5. Open the new project in your assistant and say `:start`. Do a small task, then say `:end`.
 
 [Step-by-step setup](docs/QUICKSTART.md) · [How it works](docs/HOW-IT-WORKS.md) · [Add Obsidian and MemPalace](docs/OPTIONAL-MEMORY.md) · [Worked example](docs/WALKTHROUGH.md)
 
@@ -23,6 +26,7 @@ GD SYNCER is designed to let you change AI assistants, conversations, and comput
 
 - Continuity across AI assistants and computers through shared, readable project files—not a dependency on one chat's memory.
 - A Markdown-first protocol with very limited code or scripting: no required background app, database, build step, or command-line runtime for normal use.
+- An `AAA` workspace manager that keeps global setup, shared resources, templates and project folders organized in one place.
 - A separate home for each project, with a written next step you can find again.
 - Plain-text files you can read and keep without a special app.
 - Customer, marketing, and research branches with their own working context.

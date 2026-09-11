@@ -1,12 +1,12 @@
-# Your first project: Shorts
+# Your first AAA workspace and project: Shorts
 
 You do not need to know Git, write code, or buy a template. Allow one short practice session. **Shorts is a fictional example here—we are testing project memory, not creating a YouTube channel.**
 
 ## 1. Download GDSYNCER
 
-From the [GDSYNCER front page](https://github.com/frogwraps/GDSYNCER), choose the green **Code** button, then **Download ZIP**. You do not need a GitHub account to download a public repository. Extract the ZIP into Downloads or another temporary location outside your live workspace.
+From the GDSYNCER repository, choose the green **Code** button, then **Download ZIP**. While this beta is unpublished, you need repository access. Extract the ZIP into Downloads or another temporary location outside your live workspace.
 
-Prefer a versioned copy? Open [the beta release](https://github.com/frogwraps/GDSYNCER/releases/tag/v2.12.0-beta.2) and download GDSYNCER-v2.12.0-beta.2.zip under Assets, then extract it.
+Prefer a versioned copy? Publication is paused while the AAA workspace-manager flow is tightened, so use only the current staging package you were given access to. Do not use older beta ZIPs for a first impression.
 
 The downloaded README is the introduction; workspace/ contains what you install. Keep docs/ available for reference.
 
@@ -20,13 +20,19 @@ Choose [streaming or mirroring](https://support.google.com/drive/answer/13401938
 
 Linux/server environments, including a remote Hermes agent, need their own configured Drive access route; Google's native desktop client is for Windows/macOS. Do not assume a remote agent can see a local drive letter. See [supported systems](https://support.google.com/drive/answer/2375082?hl=en).
 
-## 3. Open AAA in your assistant
+## 3. Open AAA in your assistant and start the workspace
 
 Use an assistant environment that can read AND write local Markdown files, such as a configured local Codex or Claude environment. Give it access to AAA. A normal browser chat without connected file access cannot execute this protocol.
 
 Paste:
 
-> Read START_HERE.md in this workspace. Install a new project named Shorts using the supplied project template. Its purpose is ONLY a fictional GDSYNCER setup/save/resume test. Success means a fresh conversation recovers the exact saved next action and its source citation. Do not create a channel, publish anything, connect paid services or invent business details. Include the optional sample content folders described in the downloaded docs/TEMPLATES.md if that file is available. Initialize and close the setup session, then show the project path.
+> Read START_HERE.md and execute :start.
+
+Expected: the assistant identifies this as the `AAA` workspace manager, reads the shared TOOLBOX and version manifest, and offers to start or enter a project. It should not create a project until you ask.
+
+Now say:
+
+> start a project named Shorts. Its purpose is ONLY a fictional GDSYNCER setup/save/resume test. Success means a fresh conversation recovers the exact saved next action and its source citation. Do not create a channel, publish anything, connect paid services or invent business details. Include the optional sample content folders described in the downloaded docs/TEMPLATES.md if that file is available. Initialize and close the setup session, then show the project path.
 
 Expected: a new **GDS Shorts** folder containing four KISS files, AGENTS/CLAUDE entry wrappers and log/. New project roots use the `GDS <name>` pattern; give the assistant the plain name, such as `Shorts`, and let the protocol add `GDS`. The workspace template must remain unchanged. If files already exist, the assistant must stop rather than overwrite them.
 
@@ -68,7 +74,7 @@ While this session is OPEN, a second fresh conversation attempting :start must i
 
 ## Once the test works
 
-Create your own separately named project through workspace START_HERE. Use [project templates](TEMPLATES.md) for organization and [the full walkthrough](WALKTHROUGH.md) to test branches. Add [optional memory](OPTIONAL-MEMORY.md) only after the basic handoff works. Do not mix private project data into the public repository.
+Create your own separately named project by opening `AAA`, running `:start`, then saying `start a project`. Use [project templates](TEMPLATES.md) for organization and [the full walkthrough](WALKTHROUGH.md) to test branches. Add [optional memory](OPTIONAL-MEMORY.md) only after the basic handoff works. Do not mix private project data into the protocol repository.
 
 ## If you already have a project
 

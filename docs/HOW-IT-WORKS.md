@@ -1,6 +1,8 @@
 # How it works
 
-A project has four working files. Think of them as a bookmark and a table of contents for your AI-assisted work.
+GD SYNCER starts with an `AAA` workspace folder. AAA is the project manager: it holds the global toolbox, version manifest, templates and every project folder. You open AAA first, say `:start`, then say `start a project` when you want to create a new `GDS <Project Name>` folder.
+
+Inside each project are four working files. Think of them as a bookmark and a table of contents for your AI-assisted work.
 
 | File | Question it answers |
 |---|---|
@@ -17,5 +19,4 @@ A branch is a subfolder with its own versions of these files. It can hold custom
 
 This can help keep projects separate, but the assistant must follow the instructions. There is no background agent, file-sync engine, database service, or security sandbox supplied by GD SYNCER. Your chosen AI tool needs actual access to the folder. A phone or browser chat without file access cannot execute a save simply because you type a command.
 
-Google Drive carries project files between devices. Optional Obsidian provides browsable notes, MemPalace provides semantic recall, and TOOLBOX points to whatever tools you actually have. References connect these layers; the protocol does not install or authenticate them.
-
+Google Drive carries AAA and its project files between devices. Optional Obsidian provides browsable notes, MemPalace provides semantic recall, and TOOLBOX points to whatever tools you actually have. References connect these layers; the protocol does not install or authenticate them.

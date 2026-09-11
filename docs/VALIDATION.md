@@ -1,17 +1,18 @@
 # Public package validation
 
-Status: PASS for v2.12.0-beta.2 package validation on 2026-09-11.
+Status: NEEDS REVALIDATION for v2.12.0-beta.3 package validation.
 
-This validation covers the clean public package, not the creator's private workspace. Private project history, private tool manifests, and private logs are not included.
+This validation page currently covers the staged package, not the creator's private workspace. Private project history, private tool manifests, and private logs are not included.
 
 ## Static package checks
 
 - Repository URLs point to `https://github.com/frogwraps/GDSYNCER`.
-- No stale pre-public repository links remain in tracked public files.
+- No stale pre-public repository links remain in tracked package files.
 - No launch-blocking placeholder language remains outside intentional template placeholders.
 - `_validation/` is ignored so isolated proof workspaces are not shipped.
 - The package contains 32 tracked public files before Git metadata or release ZIP assets.
 - First-time setup docs now name the mounted Google Drive workspace folder `AAA`, while project folders inside it still use `GDS <name>`.
+- The intended beta.3 startup flow is now: open `AAA`, run `:start`, then say `start a project`. This still needs a fresh isolated proof before republication.
 
 ## Isolated Shorts proof
 

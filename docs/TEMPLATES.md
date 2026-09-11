@@ -4,7 +4,7 @@ Every project uses the same four-file protocol. A template supplies helpful cont
 
 This beta ships the universal project starter and an optional **YouTube Shorts sample layout**. The Shorts sample is fictional proof of setup/save/resume, not a channel-building service. No channel, niche, posting schedule or tools are assumed.
 
-After copying the universal project starter into GDS Shorts, an assistant may create these content folders on request:
+After opening `AAA`, running `:start`, and saying `start a project named Shorts`, the assistant copies the universal project starter into `GDS Shorts`. It may then create these content folders on request:
 
 - 01_Channel — audience, purpose and branding references.
 - 02_Ideas — ideas and a production queue.

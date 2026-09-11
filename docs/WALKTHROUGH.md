@@ -5,7 +5,7 @@ Use only a fresh fictional workspace. Run [Quickstart](QUICKSTART.md) first. Thi
 Record the assistant/version, OS, input, actual files changed and observed result. Tests must inspect effects, not merely search instructions for keywords.
 
 ## Core lifecycle
-1. Install GDS Shorts as instructed. Confirm the template's bytes stayed unchanged.
+1. Open `AAA`, run `:start`, say `start a project named Shorts`, and confirm the template's bytes stayed unchanged.
 2. START, record the sample decision and exact next action, END. Inspect the log citation and closed NEXT_ACTION.
 3. In a fresh conversation START and recover that next action without the prior chat.
 4. With the first session active, a second session attempts START. Compare all project-file hashes before/after: the foreign owner must stop with zero project mutations.
