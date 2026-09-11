@@ -1,0 +1,13 @@
+# Release-maintainer artifacts; a copied workspace never needs Git.
+.git/
+_BACKUP/
+_MERGE_BACKUP/
+_validation/
+*.candidate.md
+*.zip
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
