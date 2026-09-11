@@ -1,6 +1,6 @@
 # Public package validation
 
-Status: PASS for v2.12.0-beta.1 package validation on 2026-09-11.
+Status: PASS for v2.12.0-beta.2 package validation on 2026-09-11.
 
 This validation covers the clean public package, not the creator's private workspace. Private project history, private tool manifests, and private logs are not included.
 
@@ -11,6 +11,7 @@ This validation covers the clean public package, not the creator's private works
 - No launch-blocking placeholder language remains outside intentional template placeholders.
 - `_validation/` is ignored so isolated proof workspaces are not shipped.
 - The package contains 32 tracked public files before Git metadata or release ZIP assets.
+- First-time setup docs now name the mounted Google Drive workspace folder `AAA`, while project folders inside it still use `GDS <name>`.
 
 ## Isolated Shorts proof
 

@@ -13,7 +13,7 @@ GD SYNCER is designed to let you change AI assistants, conversations, and comput
 ## Try it
 
 1. Download the ZIP from [Releases](https://github.com/frogwraps/GDSYNCER/releases) when available, or use GitHub's **Code → Download ZIP**.
-2. Set up Google Drive for desktop on Windows or macOS and confirm your Drive folder is accessible through your computer's file system. Extract the release outside your work folders, then copy the **contents** of `workspace/` into a new, empty `My Projects` folder on that Drive. See the setup guide below for sync checks and other environments.
+2. Set up Google Drive for desktop on Windows or macOS and confirm your Drive folder is accessible through your computer's file system. Extract the release outside your work folders, then copy the **contents** of `workspace/` into a new, empty `AAA` folder on that Drive. See the setup guide below for sync checks and other environments.
 3. Open that folder in an AI assistant that can read and write its files. Ask it to read `START_HERE.md` and install a project called `My First Project`. The protocol creates the folder as `GDS My First Project`.
 4. Open the new project in your assistant and say `:start`. Do a small task, then say `:end`.
 

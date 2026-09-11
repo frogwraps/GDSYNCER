@@ -1,7 +1,7 @@
 ---
 type: protocol-version
 current-version: v2.12
-distribution-version: v2.12.0-beta.1
+distribution-version: v2.12.0-beta.2
 upstream-repository: frogwraps/GDSYNCER
 update-policy: prompt
 ---

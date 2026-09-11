@@ -6,7 +6,7 @@ You do not need to know Git, write code, or buy a template. Allow one short prac
 
 From the [GDSYNCER front page](https://github.com/frogwraps/GDSYNCER), choose the green **Code** button, then **Download ZIP**. You do not need a GitHub account to download a public repository. Extract the ZIP into Downloads or another temporary location outside your live workspace.
 
-Prefer a versioned copy? Open [the beta release](https://github.com/frogwraps/GDSYNCER/releases/tag/v2.12.0-beta.1) and download GDSYNCER-v2.12.0-beta.1.zip under Assets, then extract it.
+Prefer a versioned copy? Open [the beta release](https://github.com/frogwraps/GDSYNCER/releases/tag/v2.12.0-beta.2) and download GDSYNCER-v2.12.0-beta.2.zip under Assets, then extract it.
 
 The downloaded README is the introduction; workspace/ contains what you install. Keep docs/ available for reference.
 
@@ -14,15 +14,15 @@ The downloaded README is the introduction; workspace/ contains what you install.
 
 Install [Google Drive for desktop](https://support.google.com/drive/answer/10838124?hl=en) on Windows or macOS, sign in and enable starting it when you sign in to the computer. Open its folder through File Explorer or Finder—not just the Drive website.
 
-Create a NEW empty folder there called **My Projects**. Copy the CONTENTS of the download's workspace/ folder into My Projects, including _templates/. Do not copy over an existing project or create separate disconnected copies on different computers.
+Create a NEW empty folder there called **AAA**. Copy the CONTENTS of the download's workspace/ folder into AAA, including _templates/. Do not copy over an existing project or create separate disconnected copies on different computers.
 
 Choose [streaming or mirroring](https://support.google.com/drive/answer/13401938?hl=en); make the active workspace available offline if needed and leave sufficient local disk space. Seeing a folder is not proof sync finished. Have your assistant create a harmless test file, wait for Drive, and confirm the same content appears on the Drive website or another device before trusting cross-device handoff. Keep separate backups.
 
 Linux/server environments, including a remote Hermes agent, need their own configured Drive access route; Google's native desktop client is for Windows/macOS. Do not assume a remote agent can see a local drive letter. See [supported systems](https://support.google.com/drive/answer/2375082?hl=en).
 
-## 3. Open My Projects in your assistant
+## 3. Open AAA in your assistant
 
-Use an assistant environment that can read AND write local Markdown files, such as a configured local Codex or Claude environment. Give it access to My Projects. A normal browser chat without connected file access cannot execute this protocol.
+Use an assistant environment that can read AND write local Markdown files, such as a configured local Codex or Claude environment. Give it access to AAA. A normal browser chat without connected file access cannot execute this protocol.
 
 Paste:
 

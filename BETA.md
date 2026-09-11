@@ -1,6 +1,6 @@
 # Beta status and acceptance
 
-Release candidate: v2.12.0-beta.1. Protocol schema: v2.12.
+Release candidate: v2.12.0-beta.2. Protocol schema: v2.12.
 
 The underlying protocol has been used in the creator's Windows/Google Drive workspace across multiple projects. The private development suites most recently passed 15 context checks and 43 branch-fixture checks on 2026-09-10. Those results cover that development surface; they do not prove this new package or every assistant. Private tests and logs are deliberately excluded.
 
@@ -13,4 +13,3 @@ Complete [the walkthrough](docs/WALKTHROUGH.md), reopen the result in a fresh co
 ## Maintainer publication steps
 
 Verify the clean Git history and tracked-file allowlist; run the package checker and walkthrough; attach the clean ZIP and SHA-256 file to a draft prerelease. Read back repository visibility and release draft state. When the owner approves public launch, change only this clean repository to public, publish the prerelease, and verify the README and asset download without authentication. Public URLs in this candidate become accessible to other people only after that step.
-
