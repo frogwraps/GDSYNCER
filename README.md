@@ -22,6 +22,7 @@ GD SYNCER is designed to let you change AI assistants, conversations, and comput
 ## What you get
 
 - Continuity across AI assistants and computers through shared, readable project files—not a dependency on one chat's memory.
+- A Markdown-first protocol with very limited code or scripting: no required background app, database, build step, or command-line runtime for normal use.
 - A separate home for each project, with a written next step you can find again.
 - Plain-text files you can read and keep without a special app.
 - Customer, marketing, and research branches with their own working context.
