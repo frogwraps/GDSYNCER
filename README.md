@@ -10,7 +10,7 @@ The design follows KISS: Keep It Simple, Stupid. The core is a small set of Mark
 
 — Ben, creator of GD SYNCER
 
-**Unpublished beta staging package · protocol v2.12 · MIT licensed.** The protocol is free; your AI assistant, storage, or optional services may have their own costs.
+**Validated beta release candidate · protocol v2.12 · MIT licensed.** The protocol is free; your AI assistant, storage, or optional services may have their own costs.
 
 ## Try it
 
@@ -21,6 +21,11 @@ The design follows KISS: Keep It Simple, Stupid. The core is a small set of Mark
 5. Open the new project in your assistant and say `:start`. Do a small task, then say `:end`.
 
 [Step-by-step setup](docs/QUICKSTART.md) · [How it works](docs/HOW-IT-WORKS.md) · [Add Obsidian and MemPalace](docs/OPTIONAL-MEMORY.md) · [Worked example](docs/WALKTHROUGH.md)
+## Best for / not for
+
+**Best for:** people who work across interruptions, devices, or file-capable assistants and want a lightweight, readable place to resume one project at a time.
+
+**Not for:** browser-only chat, teams that need enforced concurrency or access control, or anyone who expects Google Drive or a Markdown file to guarantee synchronization before it has finished.
 
 ## What you get
 

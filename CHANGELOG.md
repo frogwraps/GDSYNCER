@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.12.0-beta.3 — unpublished
+## v2.12.0-beta.3 — validated release candidate
 
 Workspace-manager correction.
 
@@ -8,7 +8,7 @@ Workspace-manager correction.
 - Defines the expected flow: open `AAA`, run `:start`, then say `start a project`.
 - Clarifies that `AAA` owns the global toolbox, version manifest, project templates and project organization.
 - Keeps project folders as `GDS <Project Name>` inside `AAA`.
-- Pauses public publication while this user experience is sorted out.
+- Adds a repeatable isolated package validation gate before owner-controlled publication.
 
 ## v2.12.0-beta.2 — 2026-09-11
 

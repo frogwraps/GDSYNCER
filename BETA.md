@@ -1,6 +1,6 @@
 # Beta status and acceptance
 
-Release candidate: v2.12.0-beta.3. Protocol schema: v2.12. Publication is paused while the AAA workspace-manager flow is being tightened.
+Release candidate: v2.12.0-beta.3. Protocol schema: v2.12. The package passed its isolated AAA workspace-manager validation on 2026-09-12. Publication remains an explicit owner action.
 
 The underlying protocol has been used in the creator's Windows/Google Drive workspace across multiple projects. The private development suites most recently passed 15 context checks and 43 branch-fixture checks on 2026-09-10. Those results cover that development surface; they do not prove this new package or every assistant. Private tests and logs are deliberately excluded.
 

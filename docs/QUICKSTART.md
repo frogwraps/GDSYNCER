@@ -4,9 +4,9 @@ You do not need to know Git, write code, or buy a template. Allow one short prac
 
 ## 1. Download GDSYNCER
 
-From the GDSYNCER repository, choose the green **Code** button, then **Download ZIP**. While this beta is unpublished, you need repository access. Extract the ZIP into Downloads or another temporary location outside your live workspace.
+From the GDSYNCER repository, choose the green **Code** button, then **Download ZIP**. If you are reviewing a private preview, you need access from the owner; once the repository is public, anyone can download the ZIP. Extract it into Downloads or another temporary location outside your live workspace.
 
-Prefer a versioned copy? Publication is paused while the AAA workspace-manager flow is tightened, so use only the current staging package you were given access to. Do not use older beta ZIPs for a first impression.
+Prefer a versioned copy? Use the current validated beta release candidate. Do not use older beta ZIPs for a first impression.
 
 The downloaded README is the introduction; workspace/ contains what you install. Keep docs/ available for reference.
 
@@ -83,5 +83,16 @@ Do not paste a starter over existing files. Ask the assistant to read the worksp
 ## Programmer path and updates
 
 You may clone https://github.com/frogwraps/GDSYNCER outside Google Drive, inspect the Markdown, and copy workspace/ into a fresh synced working home. Normal protocol use needs neither a Git checkout nor a command-line runtime.
+
+## Optional: verify the downloaded package
+
+Normal use does not require Python. If you want to verify a downloaded release before copying it into Drive, install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). Open a terminal in the extracted GDSYNCER folder and run:
+
+```text
+python --version
+python scripts/verify_package.py --root .
+```
+
+Expected: `PACKAGE_VALIDATION_PASS`. The check uses a temporary fictional AAA workspace. It does not modify your live Drive workspace, publish anything, or connect Obsidian or MemPalace.
 
 For an update, download a reviewed release outside the workspace and ask your assistant to compare its version manifest. Follow documented migrations with backups and readback. Never replace your project with a new blank template. This first public baseline cannot automatically migrate an arbitrary older private installation.
